@@ -204,9 +204,9 @@ services:
               }
               if (fileExists(build_folder)){
               echo "Uploading $jfrog_build_archive build archive to JFrog..."
-              sh "zip -r $jfrog_build_archive $build_folder"
-              }
+              sh "zip -r $jfrog_build_archive $build_folder"         
               jf "rt u $jfrog_build_archive /$jfrogBuildsDirectory"
+              }
               jf 'rt bp'
         }
       }
