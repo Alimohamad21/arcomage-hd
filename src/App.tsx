@@ -3,7 +3,7 @@ import './App.scss'
 import Game from './components/Game'
 import { useAppDispatch, useAppSelector } from './utils/useAppDispatch'
 
-import { Helme } from 'react-helmet-async'
+import { Helmet } from 'react-helmet-async'
 
 import useBeforeWindowUnloadWarning from './utils/useBeforeWindowUnloadWarning'
 import useDisableContextMenu from './utils/useDisableContextMenu'
